@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<head>
+<meta charset="utf-8">
+    <title>test</title>
+    <style>
+      {
+        padding: 0;
+        margin: 0;
+      }
+      li {
+        list-style-type: none;
+      }
+
+      #menu{
+        clear: both;
+        height: 40px;
+        background: #ffffff;
+        color: black;
+        text-align: center;
+        padding-top: 15px;
+        font-size: 20px;
+        border: solid 1px white;
+      }
+      #menu li{
+        display: inline;
+      }
+      #notify li{
+        float: right;
+        font-size: 15px;
+        display: inline;
+      }
+
+
+      .item{
+        margin: 0 30px 0 30px;
+      }
+      .item2{
+        margin: 0 10px 0 10px;
+
+      }
+      h1{
+        margin-bottom: 50px;
+        margin-top: 50px;
+      }
+      h2{
+        margin: 20px 0 40px 500px;
+      }
+      #in {
+
+        font-size: 25px;
+        margin-left:72px;
+
+      }
+      #out{
+        font-size: 25px;
+        margin-left: 50px;
+      }
+      #put{
+        font-size: 25px;
+        margin-left: 99px;
+      }
+      select{
+        font-size: 25px;
+        margin-left: 28px;
+      }
+
+      #button{
+        width: 300px;
+        height: 25px;
+        padding: 8px;
+        margin-left: 300px;
+        background-color: orange;
+        color: white;
+        border-radius: 15px;
+        margin-top: 50px;
+        }
+        #put2{
+          font-size: 25px;
+          margin-left: 75px;
+        }
+        .select{
+          margin-bottom: 200px;
+        }
+
+
+    </style>
+
+
+
+
+
+
+  </head>
+  <body>
+      <ul id='menu'>
+        <li class='item'>회사소개</li>
+        <li>|</li>
+        <li class='item'>개인택배</li>
+        <li>|</li>
+        <li class='item'>고객지원</li>
+    </ul>
+      <ul id='notify'>
+        <li class='item2' onclick="location.href='Main.html'">로그인</li>
+		<li>|</li>
+		<li class='item2' onclick="location.href='SUS.html'">회원가입</li>
+        <li>|</li>
+        <li class='item2'>공지사항</li>
+    </ul>
+      <h1 class="title"><center>회원종류 입력</center></h1>
+      <h2 class="title">★일반 회원★</h2>
+      <h2 class="title">아이디<input id="in"type="text"name="id"placeholder="ID"></h2>
+      <h2 class="title">비밀번호<input id="out"type="password"name="pass"placeholder="password"></h2>
+      <h2 class="title">이름<input id="put"type="text"name="id"placeholder=""></h2>
+
+      <h2 class="email">이메일<input id="put2"type="text"name="id"placeholder=""> @
+      <select>
+        <option>선택</option>
+        <option>naver.com</option>
+        <option>daum.net</option>
+        <option>hanmail.net</option>
+        <option>gmail.com</option>
+      </select>
+      <div id='button'>
+        <center>가입하기</center>
+    </div>
+    </h2>
+  </body>
+</html>

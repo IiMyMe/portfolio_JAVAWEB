@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<!-- <meta name="viewport" content="width=device-width" initial-scale="1"> -->
+<link rel="stylesheet" href="css/bootstrap.min.css">
+
+<title>배송조회</title>
+<style>
+
+@media screen and (max-width: 480px){
+	#menu {
+		margin-left: -10%;
+	}
+	form #button {
+		margin-left: 0;
+		width: 100%;
+	}
+	form #in {
+		width: 90%;
+	}
+}
+
+#button {
+	width: 20%;
+	height: 35px;
+	padding: 8px;
+	margin-left: 0%;
+	background-color: blue;
+	color: white;
+	border-radius: 15px;
+}
+
+{
+padding: 0;
+margin: 0;
+}
+li {
+	list-style-type: none;
+}
+
+#head {
+	background: #ffffff;
+}
+
+#logo {
+	float: left;
+	margin: 20px 0 10px 2%;
+	border: solid 1px white;
+}
+
+#top {
+	float: right;
+	margin: 30px 2% 0 0;
+	border: solid 1px white;
+}
+
+#menu {
+	clear: both;
+	height: 40px;
+	background: #ffffff;
+	color: black;
+	text-align: center;
+	padding-top: 15px;
+	font-size: 20px;
+	border: solid 1px white;
+	white-space: nowrap;
+}
+
+#menu li {
+	display: inline;
+}
+
+#notify li {
+	float: right;
+	font-size: 15px;
+	display: inline;
+	white-space: nowrap;
+}
+
+#in {
+	font-size: 25px;
+	margin-bottom: 20px;
+	/* margin-left: 40%; */
+}
+
+#pa {
+	font-size: 25px;
+	margin-left: 40%;
+}
+
+h3 {
+	margin-left: 40%;
+}
+
+.item {
+	margin: 0 3% 0 3%;
+}
+
+.item2 {
+	margin: 0 1% 0 1%;
+}
+
+h1 {
+	margin-bottom: 20px;
+	margin-top: 50px;
+	white-space: nowrap;
+}
+
+h2 {
+	margin-bottom: 0;
+	margin-top: 10px;
+	white-space: nowrap;
+}
+
+</style>
+</head>
+<body>
+	<script language="javascript">
+		//location.href = 'LookUP.jsp?userID=' + userID;
+	   var userID=location.href.split("?")[1].split("=")[1];
+	   function BC() {
+		   location.href="RMain.html?userID=" + userID;
+	   }
+	</script>
+	
+	<div id='head'></div>
+	<center>
+		<h2 class='text'>다다조 홈페이지에 오신것을</h2>
+		<h2 class='text'>환영합니다</h2>
+		<ul id='menu'>
+			<li class='item'>회사소개</li>
+			<li>|</li>
+			<li class='item'>개인택배</li>
+			<li>|</li>
+			<li class='item'>고객지원</li>
+		</ul>
+	</center>
+    <ul id='notify'>
+		<li class='item2' onclick="location.href='../Logout.jsp'">로그아웃</li>
+		<li>|</li>
+		<li class='item2'>공지사항</li>
+	</ul>
+	
+	<center>
+		<div class="container">
+			<div class="col-lg-4"></div>
+			<div class="col-lg-4">
+				<div class="jumbotron" style="padding-top: 20px;">
+					<form method="post" action="LookUP.jsp">
+						<h1 class="title">
+							<center>배송조회</center>
+						</h1>
+							<div class="form-group">
+							<input type="text" id="in" class="form-control" placeholder="아이디"
+								name="userID" maxlength="20">
+						</div>
+						<div class="form-group">
+							<input type="text" id="in" class="form-control" placeholder="운송장 번호"
+								name="waybillNumber" maxlength="20">
+						</div>
+						<input type="submit" id="button" class="btn btn-primary form-control" value="조회하기"/>
+						<p></p>
+						<input type="button" id="button" value="돌아가기" onclick="BC()" />
+					</form>
+				</div>
+			</div>
+		</div>
+	</center>
+
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+	<script src="js/bootstrap.js"></script>
+
+</body>
+</html>

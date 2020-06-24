@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width" />
+<!-- 
+<meta name="viewport" content="user-scalable=no, initial-scale=1, screen.width=device-width, screen.height=device-heights" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+ -->
+<title>Main</title>
+<style>
+
+/* #Signup {min-height: 400px;}
+#Login {min-height: 400px; width: 80%; float: left;}
+
+@media screen and (max-width: 800px) 
+{
+#Login { width: auto; float: none; min-height:200px; margin-bottom: 10px;}
+#Signup { width: auto; min-height: 0;}
+div#wrap{
+	font-size: 13px;
+	}
+} */
+
+/* @media screen and (max-device-width: 2280px) and (max-device-height: 1080px) and (min-device-width: 2280px) and (min-device-width: 1080px){
+	#menu {
+		margin-left: -10%;
+	}
+	section #button {
+		width: 250%;
+		margin-left: 20%;
+	}
+	section {
+		width: 20%;
+	}
+	section h3 {
+		margin-left: 20%;
+	}
+} */
+
+@media screen and (max-width: 480px){
+	#menu {
+		margin-left: -10%;
+	}
+	section #button {
+		width: 250%;
+		margin-left: 20%;
+	}
+	section {
+		width: 20%;
+	}
+	section h3 {
+		margin-left: 20%;
+	}
+ 	section #in {
+		width: 425%;
+	}
+}
+
+@media screen and (min-width: 1439px) and (max-width: 1441px){
+	#menu {
+		margin-left: -10%;
+	}
+	section #button {
+		width: 250%;
+		margin-left: 20%;
+	}
+	section {
+		width: 20%;
+	}
+	section h3 {
+		margin-left: 20%;
+	}
+/* 	section #in {
+		width: 400%;
+	} */
+}
+
+/* @media screen and (max-width: 1920px){
+	#menu {
+		margin-left: 0;
+	}
+	section #button {
+		width: 20%;
+		margin-left: 0%;
+	}
+	section {
+		max-width: 100%;
+	}
+	section h3 {
+		margin-left: 40%;
+	}
+} */
+
+#button {
+	width: 20%;
+	height: 35px;
+	padding: 8px;
+	margin-left: 0%;
+	background-color: blue;
+	color: white;
+	border-radius: 15px;
+}
+
+{
+padding: 0;
+margin: 0;
+}
+li {
+	list-style-type: none;
+}
+
+#head {
+	background: #ffffff;
+}
+
+#logo {
+	float: left;
+	margin: 20px 0 10px 2%;
+	border: solid 1px white;
+}
+
+#top {
+	float: right;
+	margin: 30px 2% 0 0;
+	border: solid 1px white;
+}
+
+#menu {
+	clear: both;
+	height: 40px;
+	background: #ffffff;
+	color: black;
+	text-align: center;
+	padding-top: 15px;
+	font-size: 20px;
+	border: solid 1px white;
+	white-space: nowrap;
+}
+
+#menu li {
+	display: inline;
+}
+
+#notify li {
+	float: right;
+	font-size: 15px;
+	display: inline;
+	white-space: nowrap;
+}
+
+#ghldnjsrkdlq li {
+	font-size: 20px;
+	color: blue;
+	text-decoration: underline;
+}
+
+#in {
+	font-size: 25px;
+	margin-left: 40%;
+}
+
+#pa {
+	font-size: 25px;
+	margin-left: 40%;
+}
+
+h3 {
+	margin-left: 40%;
+}
+
+.item {
+	margin: 0 3% 0 3%;
+}
+
+.item2 {
+	margin: 0 1% 0 1%;
+}
+
+h1 {
+	margin-bottom: 0;
+	margin-top: 50px;
+	white-space: nowrap;
+}
+
+h2 {
+	margin-bottom: 0;
+	margin-top: 10px;
+	white-space: nowrap;
+}
+
+section {
+	display: block;
+	max-width: 100%;
+	height: 300px;
+	/* float: left; */
+	margin-top: 10px;
+	white-space: nowrap;
+}
+
+/* aside {
+	width: 94%;
+	height: 600px;
+	float: right;
+	margin-top: 10px;
+} */
+</style>
+
+</head>
+<body>
+	<div id='head'></div>
+	<center>
+		<h2 class='text'>다다조 홈페이지에 오신것을</h2>
+		<h2 class='text'>환영합니다</h2>
+		<ul id='menu'>
+			<li class='item'>회사소개</li>
+			<li>|</li>
+			<li class='item'>개인택배</li>
+			<li>|</li>
+			<li class='item'>고객지원</li>
+		</ul>
+	</center>
+	<ul id='notify'>
+		<li class='item2' onclick="location.href='Main.html'">로그인</li>
+		<li>|</li>
+		<li class='item2' onclick="location.href='member/SUS.html'">회원가입</li>
+		<li>|</li>
+		<li class='item2'>공지사항</li>
+	</ul>
+
+	<h1 class="title">
+		<center>로그인</center>
+	</h1>
+	<section>
+		<form method="post" action="login/Login.jsp">
+			<!-- <h3 style="text-align: center;">로그인</h3> -->
+			<h3 class="title">아이디</h3>
+			<div class="form-group">
+				<!-- <input type="text" class="form-control" placeholder="아이디"
+						name="userID" maxlength="20"> -->
+				<input id="in" type="text" name="userID" placeholder="ID">
+			</div>
+
+			<h3 class="title">비밀번호</h3>
+			<div class="form-group">
+				<!-- <input type="password" class="form-control" placeholder="비밀번호"
+						name="userPassword" maxlength="20"> -->
+				<input id="in" type="password" name="userPassword"
+					placeholder="password">
+			</div>
+
+			<!-- <input type="submit" class="btn btn-primary form-control" value="로그인"> -->
+
+			<p>
+				<!-- <div id="button"> -->
+			<center>
+				<input type="submit" id="button"
+					class="btn btn-primary form-control" value="로그인">
+			</center>
+			<!-- </div> -->
+		</form>
+	</section>
+
+	<!-- 	<div class="Signup">
+		<aside>
+			<ul id='right'>
+				<h4 class='text'>새로운 마음으로</h4>
+				<ul id='ghldnjsrkdlq'>
+					<button type="button" onclick="location.href='member/SUS.html'">
+					<img src='./img/door.jpg' alt="" width="20" height="20">회원가입</button>
+				</ul>
+			</ul>
+		</aside>
+	</div> -->
+
+</body>
+</html>

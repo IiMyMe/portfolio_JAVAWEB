@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>메인</title>
+<style>
+</style>
+</head>
+<body>
+	<script>
+	   var userID=location.href.split("?")[1].split("=")[1];
+	   function CN() {
+		   location.href='CheckNum.jsp?userID=' + userID;
+	   }
+	   function LU() {
+		   location.href="LUS.html?userID=" + userID;
+	   }
+    </script>
+
+	<form name="form1" method="post" action="CheckNum.jsp">
+		<input type="button" value="배송조회" onclick="LU()" />
+		<p></p>
+		<input type="button" value="운송장번호확인" onclick="CN()" />
+		<p></p>
+		<input type="button" value="로그아웃" onclick="location.href='Logout.jsp'" />
+	</form>
+</body>
+</html>

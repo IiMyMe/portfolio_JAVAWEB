@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width" />
+<title>회원가입</title>
+<style>
+
+@media screen and (max-width: 480px) {
+	#menu {
+		margin-left: -13%;
+	}
+	section #button {
+		width: 75%;
+	}
+	aside #button {
+		width: 75%;
+	}
+ 	section {
+		width: 20%;
+		height: 100px;
+	}
+}
+
+/* @media screen and (max-width: 2280px) and (max-height: 1080px) {
+	#menu {
+		margin-left: -13%;
+	}
+	section #button {
+		width: 75%;
+	}
+	aside #button {
+		width: 75%;
+	}
+ 	section {
+		width: 20%;
+	}
+}
+
+@media screen and (max-width: 1920px) {
+	#menu {
+		margin-left: 0;
+	}
+	section #button {
+		width: 20%;
+	}
+	aside #button {
+		width: 20%;
+	}
+ 	section {
+		width: 49%;
+	}
+} */
+
+#button {
+	width: 20%;
+	height: 35px;
+	padding: 8px;
+	margin-left: 0%;
+	background-color: blue;
+	color: white;
+	border-radius: 15px;
+}
+
+{
+padding: 0;
+margin: 0;
+}
+li {
+	list-style-type: none;
+}
+
+#head {
+	background: #ffffff;
+}
+
+#logo {
+	float: left;
+	margin: 20px 0 10px 2%;
+	border: solid 1px white;
+}
+
+#top {
+	float: right;
+	margin: 30px 2% 0 0;
+	border: solid 1px white;
+}
+
+#menu {
+	clear: both;
+	height: 40px;
+	background: #ffffff;
+	color: black;
+	text-align: center;
+	padding-top: 15px;
+	font-size: 20px;
+	border: solid 1px white;
+	white-space: nowrap;
+}
+
+#menu li {
+	display: inline;
+}
+
+#notify li {
+	float: right;
+	font-size: 15px;
+	display: inline;
+	white-space: nowrap;
+}
+
+}
+h3 {
+	margin-left: 40%;
+}
+
+.item {
+	margin: 0 3% 0 3%;
+}
+
+.item2 {
+	margin: 0 1% 0 1%;
+}
+
+h1 {
+	margin-bottom: 50px;
+	margin-top: 50px;
+}
+
+input.img-button1 {
+	background: url( "img/RC.gif" ) no-repeat;
+	border: none;
+	width: 20%;
+	height: auto;
+	cursor: pointer;
+}
+
+input.img-button2 {
+	background: url( "img/GM.gif" ) no-repeat;
+	border: none;
+	width: 20%;
+	height: auto;
+	cursor: pointer;
+}
+
+section {
+	width: 49%;
+	height: 400px;
+	float: left;
+	margin-top: 10px;
+	border-right: solid 2px #7F7F7F;
+}
+
+aside {
+	width: 49%;
+	height: 400px;
+	float: right;
+	margin-top: 10px;
+	/* position: absolute;
+      	padding-left: 50%; */
+}
+</style>
+
+
+</head>
+<body>
+	<div id='head'></div>
+	<center>
+		<ul id='menu'>
+			<li class='item'>회사소개</li>
+			<li>|</li>
+			<li class='item'>개인택배</li>
+			<li>|</li>
+			<li class='item'>고객지원</li>
+		</ul>
+	</center>
+	<ul id='notify'>
+		<li class='item2' onclick="location.href='../Main.html'">로그인</li>
+		<li>|</li>
+		<li class='item2' onclick="location.href='SUS.html'">회원가입</li>
+		<li>|</li>
+		<li class='item2'>공지사항</li>
+	</ul>
+
+
+	<h1 class="title">
+		<center>회원종류 선택</center>
+	</h1>
+	<section>
+		<h2 class="title">
+			<center>택배사 회원</center>
+		</h2>
+		<h4 class="title">
+			<center>택배사 회원만!</center>
+		</h4>
+		<center>
+			<!-- <button type="button" class="img-button1"
+				onclick="location.href='RC.html'">
+				<img src="./img/RC.gif" width="200" height="200">
+			</button>
+			<p></p> -->
+			<input type="button" id='button' onclick="location.href='RC.html'"
+				value="가입하기">
+		</center>
+	</section>
+	<aside>
+		<h2 class="title">
+			<center>일반 회원</center>
+		</h2>
+		<h4 class="title">
+			<center>만 14세 이상 사용자</center>
+		</h4>
+		<center>
+			<!-- <button type="button" class="img-button2"
+				onclick="location.href='GM.html'">
+				<img src="./img/GM.gif" width="200" height="200">
+			</button>
+			<p></p> -->
+			<input type="button" id='button' onclick="location.href='GM.html'"
+				value="가입하기">
+		</center>
+	</aside>
+</body>
+</html>

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+  <head>
+	<meta charset="utf-8">
+    <title>회원가입</title>
+    <style>
+    #button{
+      width: 150px;
+      height: 25px;
+      padding: 8px;
+      margin-left: 380px;
+      background-color: orange;
+      color: white;
+      border-radius: 15px;
+      }
+
+      {
+        padding: 0;
+        margin: 0;
+      }
+      li {
+        list-style-type: none;
+      }
+      #head{
+        background: #ffffff;
+      }
+      #logo {
+        float: left;
+        margin: 20px 0 10px 20px;
+        border: solid 1px white;
+      }
+      #top{
+        float: right;
+        margin: 30px 20px 0 0;
+        border: solid 1px white;
+      }
+      #menu{
+        clear: both;
+        height: 40px;
+        background: #ffffff;
+        color: black;
+        text-align: center;
+        padding-top: 15px;
+        font-size: 20px;
+        border: solid 1px white;
+      }
+      #menu li{
+        display: inline;
+      }
+      #notify li{
+        float: right;
+        font-size: 15px;
+        display: inline;
+      }
+
+      }
+      h3{
+        margin-left: 400px;
+      }
+
+      .item{
+        margin: 0 30px 0 30px;
+      }
+      .item2{
+        margin: 0 10px 0 10px;
+
+      }
+      h1{
+        margin-bottom: 50px;
+        margin-top: 50px;
+      }
+      section {
+        width: 940px;
+        height: 600px;
+        float: left;
+        margin-top: 10px;
+        border-right: solid 2px #7F7F7F;
+
+      }
+      aside {
+        width: 940px;
+        height: 600px;
+        float: right;
+        margin-top: 10px;
+      }
+    </style>
+
+
+  </head>
+  <body>
+    <div id='head'>
+      </div>
+      <ul id='menu'>
+        <li class='item'>회사소개</li>
+        <li>|</li>
+        <li class='item'>개인택배</li>
+        <li>|</li>
+        <li class='item'>고객지원</li>
+      </ul>
+      <ul id='notify'>
+        <li class='item2' onclick="location.href='Main.html'">로그인</li>
+		<li>|</li>
+		<li class='item2' onclick="location.href='SUS.html'">회원가입</li>
+        <li>|</li>
+        <li class='item2'>공지사항</li>
+      </ul>
+
+
+      <h1 class="title"><center>회원종류 선택</center></h1>
+    <section>
+      <h2 class="title"><center>택배사 회원</center></h2>
+        <h4 class="title"><center>택배사 회원만!</center></h4>
+          <center>
+	          <button type="button" onclick="location.href='RC.html'">
+	          	<img src='./img/xorqo.jpg'width="200" height="200">
+	          </button>
+          </center>
+          <div id='button'>
+            <center>
+				<input type="button" onclick="location.href='RC.html'" value="가입하기">
+			</center>
+            </div>
+  </section>
+  <aside>
+    <h2 class="title"><center>일반 회원</center></h2>
+      <h4 class="title"><center>만 14세 이상 사용자</center></h4>
+        <center>
+	        <button type="button" onclick="location.href='GM.html'">
+	        	<img src='./img/dlfqks.jpg' width="200" height="200">
+	        </button>
+        </center>
+      <div id='button'>
+        <center>
+			<input type="button" onclick="location.href='GM.html'" value="가입하기">
+		</center>
+      </div>
+  </aside>
+  </body>
+</html>

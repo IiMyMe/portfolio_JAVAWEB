@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width" initial-scale="1">
+<link rel="stylesheet" href="css/bootstrap.min.css">
+
+<title>배송번호찾기</title>
+</head>
+<body>
+	<div class="container">
+		<div class="col-lg-4"></div>
+		<div class="col-lg-4">
+			<div class="jumbotron" style="padding-top: 20px;">
+				<form method="post" action="CheckNum.jsp">
+					<h3 style="text-align: center;">배송번호찾기</h3>
+					<div class="form-group">
+						<input type="text" class="form-control" placeholder="아이디입력"
+							name="userID" maxlength="20">
+					</div>
+					<input type="submit" class="btn btn-primary form-control"
+						value="조회하기"> <input type="button" value="돌아가기"
+						onclick="location.href='RMain.html'" />
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+	<script src="js/bootstrap.js"></script>
+
+</body>
+</html>

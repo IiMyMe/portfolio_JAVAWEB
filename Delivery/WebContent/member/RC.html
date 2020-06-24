@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width" />
+<title>test</title>
+<style>
+
+/* @media screen and (max-width: 2280px) and (max-height: 1080px) {
+	#menu {
+		margin-left: -10%;
+	}
+	form {
+		width: 10%;
+	}
+	form h2 {
+		font-size: 20px;
+		margin-bottom: 0%;
+	}
+	form #in {
+		font-size: 20px;
+		margin-left: 123%;
+		width: 600%;
+		margin-bottom: 0%;
+	}
+	form #out {
+		font-size: 20px;
+		margin-left: 60%;
+		width: 600%;
+		margin-bottom: 0%;
+	}
+	form #put {
+		font-size: 20px;
+		margin-left: 188%;
+		width: 600%;
+		margin-bottom: 0%;
+	}
+	form select {
+		font-size: 20px;
+	}
+	form #put2 {
+		font-size: 20px;
+		margin-left: 105%;
+		width: 600%;
+		margin-bottom: 0%;
+	}
+	form #button {
+		margin-left: 20%;
+		margin-top: 50%;
+		width: 300%;
+	}
+} */
+
+@media screen and (max-width: 480px) {
+	#menu {
+		margin-left: -10%;
+	}
+	form {
+		width: 10%;
+	}
+	form h2 {
+		font-size: 20px;
+		margin-bottom: 0%;
+	}
+	form #in {
+		font-size: 20px;
+		margin-left: 123%;
+		width: 600%;
+		margin-bottom: 0%;
+	}
+	form #out {
+		font-size: 20px;
+		margin-left: 60%;
+		width: 600%;
+		margin-bottom: 0%;
+	}
+	form #put {
+		font-size: 20px;
+		margin-left: 188%;
+		width: 600%;
+		margin-bottom: 0%;
+	}
+	form select {
+		font-size: 20px;
+	}
+	form #put2 {
+		font-size: 20px;
+		margin-left: 105%;
+		width: 600%;
+		margin-bottom: 0%;
+	}
+	form #button {
+		margin-left: 20%;
+		margin-top: 50%;
+		width: 300%;
+	}
+}
+
+/* @media screen and (max-width: 1920px) {
+	#menu {
+		margin-left: 0;
+	}
+} */
+
+{
+padding: 0;
+margin: 0;
+}
+li {
+	list-style-type: none;
+}
+
+#menu {
+	clear: both;
+	height: 40px;
+	background: #ffffff;
+	color: black;
+	text-align: center;
+	padding-top: 15px;
+	font-size: 20px;
+	border: solid 1px white;
+	white-space: nowrap;
+}
+
+#menu li {
+	display: inline;
+}
+
+#notify li {
+	float: right;
+	font-size: 15px;
+	display: inline;
+}
+
+.item {
+	margin: 0 3% 0 3%;
+}
+
+.item2 {
+	margin: 0 1% 0 1%;
+}
+
+h1 {
+	margin-bottom: 50px;
+	margin-top: 50px;
+}
+
+h2 {
+	margin: 20px 0 40px 30%;
+	white-space: nowrap;
+}
+
+#in {
+	font-size: 25px;
+	margin-left: 7.2%;
+}
+
+#out {
+	font-size: 25px;
+	margin-left: 5%;
+}
+
+#put {
+	font-size: 25px;
+	margin-left: 9.9%;
+}
+
+select {
+	font-size: 25px;
+	margin-left: 2.8%;
+}
+
+#button {
+	width: 30%;
+	height: 35px;
+	padding: 8px;
+	margin-left: -10%;
+	background-color: blue;
+	color: white;
+	border-radius: 15px;
+	margin-top: 0px;
+}
+
+#put2 {
+	font-size: 25px;
+	margin-left: 7.5%;
+}
+
+.select {
+	margin-bottom: 200px;
+}
+</style>
+
+<script src="../js/script.js"></script>
+<script type="text/javascript">
+window.onload = function(){
+	regForm.userID.focus();
+	document.getElementById("btnId").onclick = checkid1;
+	document.getElementById("button").onclick = inputCheck1;
+}
+</script>
+
+
+</head>
+<body>
+	<ul id='menu'>
+		<li class='item'>회사소개</li>
+		<li>|</li>
+		<li class='item'>개인택배</li>
+		<li>|</li>
+		<li class='item'>고객지원</li>
+	</ul>
+	<ul id='notify'>
+		<li class='item2' onclick="location.href='../Main.html'">로그인</li>
+		<li>|</li>
+		<li class='item2' onclick="location.href='SUS.html'">회원가입</li>
+		<li>|</li>
+		<li class='item2'>공지사항</li>
+	</ul>
+	<h1 class="title">
+		<center>회원정보 입력</center>
+	</h1>
+	<h2 class="title">★택배사 회원★	</h2>
+
+	<form name="regForm" method="post" action="SignUP1.jsp">
+		<h2>
+			아이디<input id="in" type="text" name="userID" placeholder="ID">
+			<input type="button" value="ID중복확인" id="btnId">
+		</h2>
+		<h2>
+			비밀번호<input id="out" type="password" name="userPassword"
+				placeholder="password">
+		</h2>
+		<h2>
+			이름<input id="put" type="text" name="userName" placeholder="name">
+		</h2>
+		<h2>
+			이메일 <input id="put2" type="text" name="userEmail" placeholder="mail">
+		</h2>
+
+		<h2>
+			택배사 선택 <select name=courier>
+				<option value="0">선택</option>
+				<option value="로젠 택배">로젠 택배</option>
+				<option value="CJ대한통운">CJ대한통운</option>
+				<option value="한진 택배">한진 택배</option>
+				<option value="경동 택배">경동 택배</option>
+				<option value="쿠팡">쿠팡</option>
+			</select>
+		</h2>
+		<center>
+			<input type="button" value="회원가입" id="button">
+		</center>
+	</form>
+
+</body>
+</html>
